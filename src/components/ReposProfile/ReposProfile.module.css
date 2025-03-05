@@ -33,4 +33,10 @@
     border-radius: 20px;
     text-decoration: none;
     background-color: var(--bg-color);
+    transition: all .5s ease;
 }
+
+.ItemRef:hover {
+    background-color: var(--colorWhite);
+    color: var(--corPrincipal);
+  }
