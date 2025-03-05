@@ -7,6 +7,8 @@ const Repos = ({ user }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        if (!user) return;
+
         fetch(`https://api.github.com/users/${user}/repos`)
             .then(res => res.json())
             .then(resJson => {
@@ -14,7 +16,13 @@ const Repos = ({ user }) => {
                     setLoading(false);
                     setRepos(resJson);
                 }, 5000);
-            }, [user])            
+                setError(null);
+
+            }, [user]) 
+            .catch(error => {
+               console.error("Erro ao buscar repositórios:", error);
+               setError(error.message);
+            });          
     })
 
     return (
