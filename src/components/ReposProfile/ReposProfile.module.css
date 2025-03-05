@@ -1,0 +1,36 @@
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.listItem {
+    text-align: center;
+    list-style: none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.ItemName {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ItemName b, .ItemLanguage b {
+    margin-right: 5px;
+}
+
+.ItemRef {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: var(--bg-color);
+}
