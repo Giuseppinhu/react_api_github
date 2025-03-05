@@ -16,12 +16,10 @@
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  padding: 0.01rem;
+  margin-top: 10px;
   background-color: var(--corPrincipal);
   border-radius: 10px;
-}
-
-.container-content {
-  background-color: red;
 }
 
 body {
